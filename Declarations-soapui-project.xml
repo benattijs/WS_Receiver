@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="30fa1b18-686e-415f-9530-e895466a27ad" activeEnvironment="Default" name="Declarations" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="01fe3f1f-49fe-43e2-8235-8ec2a860cade" wsaVersion="NONE" name="DeclarationsSoap12" type="wsdl" bindingName="{http://tempuri.org/}DeclarationsSoap12" soapVersion="1_2" anonymous="optional" definition="https://localhost:44376/Declarations.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint></con:endpoints><con:operation id="2a0ad11d-78c5-438a-8835-a0449ec87a0b" isOneWay="false" action="http://tempuri.org/ReceiveDeclatations" name="ReceiveDeclatarions" bindingOperationName="ReceiveDeclatations" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bc29aed3-d3eb-4b16-85fc-eef9b77c46f1" name="Success"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ReceiveDeclarations>\r
+         <!--Optional:-->\r
+         <tem:inputDocument>
+	         &lt;InputDocument&gt;
+			&lt;DeclarationList&gt;
+				&lt;Declaration Command=&quot;DEFAULT&quot; Version=&quot;5.13&quot;&gt;
+					&lt;DeclarationHeader&gt;
+						&lt;Jurisdiction&gt;IE&lt;/Jurisdiction&gt;
+						&lt;CWProcedure&gt;IMPORT&lt;/CWProcedure&gt;
+						&lt;DeclarationDestination&gt;CUSTOMSWAREIE&lt;/DeclarationDestination&gt;
+						&lt;DocumentRef&gt;71Q0019681&lt;/DocumentRef&gt;
+						&lt;SiteID&gt;DUB&lt;/SiteID&gt;
+						&lt;AccountCode&gt;G0779837&lt;/AccountCode&gt;
+					&lt;/DeclarationHeader&gt;
+				&lt;/Declaration&gt;
+			&lt;/DeclarationList&gt;
+		&lt;/InputDocument&gt;
+	</tem:inputDocument>\r
+      </tem:ReceiveDeclarations>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/DeclarationsSoap/ReceiveDeclatationsRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="2e9db657-8e84-41b1-8273-fc1e64fd73a9" name="InvalidComman"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ReceiveDeclarations>\r
+         <!--Optional:-->\r
+         <tem:inputDocument>
+	         &lt;InputDocument&gt;
+			&lt;DeclarationList&gt;
+				&lt;Declaration Command=&quot;CUSTOM&quot; Version=&quot;5.13&quot;&gt;
+					&lt;DeclarationHeader&gt;
+						&lt;Jurisdiction&gt;IE&lt;/Jurisdiction&gt;
+						&lt;CWProcedure&gt;IMPORT&lt;/CWProcedure&gt;
+						&lt;DeclarationDestination&gt;CUSTOMSWAREIE&lt;/DeclarationDestination&gt;
+						&lt;DocumentRef&gt;71Q0019681&lt;/DocumentRef&gt;
+						&lt;SiteID&gt;DUB&lt;/SiteID&gt;
+						&lt;AccountCode&gt;G0779837&lt;/AccountCode&gt;
+					&lt;/DeclarationHeader&gt;
+				&lt;/Declaration&gt;
+			&lt;/DeclarationList&gt;
+		&lt;/InputDocument&gt;
+	</tem:inputDocument>\r
+      </tem:ReceiveDeclarations>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/DeclarationsSoap/ReceiveDeclatarionsRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="f6021b8d-3e3b-4904-a5c5-d70c440242d3" name="InvalidSiteID"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ReceiveDeclarations>\r
+         <!--Optional:-->\r
+         <tem:inputDocument>
+	         &lt;InputDocument&gt;
+			&lt;DeclarationList&gt;
+				&lt;Declaration Command=&quot;DEFAULT&quot; Version=&quot;5.13&quot;&gt;
+					&lt;DeclarationHeader&gt;
+						&lt;Jurisdiction&gt;IE&lt;/Jurisdiction&gt;
+						&lt;CWProcedure&gt;IMPORT&lt;/CWProcedure&gt;
+						&lt;DeclarationDestination&gt;CUSTOMSWAREIE&lt;/DeclarationDestination&gt;
+						&lt;DocumentRef&gt;71Q0019681&lt;/DocumentRef&gt;
+						&lt;SiteID&gt;LIM&lt;/SiteID&gt;
+						&lt;AccountCode&gt;G0779837&lt;/AccountCode&gt;
+					&lt;/DeclarationHeader&gt;
+				&lt;/Declaration&gt;
+			&lt;/DeclarationList&gt;
+		&lt;/InputDocument&gt;
+	</tem:inputDocument>\r
+      </tem:ReceiveDeclarations>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/DeclarationsSoap/ReceiveDeclatarionsRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="76f36b8a-2064-47f7-9d1f-5fa305c0031e" name="MultipleErrors"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:ReceiveDeclarations>\r
+         <!--Optional:-->\r
+         <tem:inputDocument>
+	         &lt;InputDocument&gt;
+			&lt;DeclarationList&gt;
+				&lt;Declaration Command=&quot;CUSTOM&quot; Version=&quot;5.13&quot;&gt;
+					&lt;DeclarationHeader&gt;
+						&lt;Jurisdiction&gt;IE&lt;/Jurisdiction&gt;
+						&lt;CWProcedure&gt;IMPORT&lt;/CWProcedure&gt;
+						&lt;DeclarationDestination&gt;CUSTOMSWAREIE&lt;/DeclarationDestination&gt;
+						&lt;DocumentRef&gt;71Q0019681&lt;/DocumentRef&gt;
+						&lt;SiteID&gt;LIM&lt;/SiteID&gt;
+						&lt;AccountCode&gt;G0779837&lt;/AccountCode&gt;
+					&lt;/DeclarationHeader&gt;
+				&lt;/Declaration&gt;
+			&lt;/DeclarationList&gt;
+		&lt;/InputDocument&gt;
+	</tem:inputDocument>\r
+      </tem:ReceiveDeclarations>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/DeclarationsSoap/ReceiveDeclatarionsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="89ac4269-611e-4cc3-a654-431624e8813b" wsaVersion="NONE" name="DeclarationsSoap" type="wsdl" bindingName="{http://tempuri.org/}DeclarationsSoap" soapVersion="1_1" anonymous="optional" definition="https://localhost:44376/Declarations.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://localhost:44376/Declarations.asmx?WSDL"><con:part><con:url>https://localhost:44376/Declarations.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ReceiveDeclatations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inputDocument" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveDeclatationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiveDeclatationsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReceiveDeclatationsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReceiveDeclatations"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiveDeclatationsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReceiveDeclatationsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="DeclarationsSoap">
+    <wsdl:operation name="ReceiveDeclatations">
+      <wsdl:input message="tns:ReceiveDeclatationsSoapIn"/>
+      <wsdl:output message="tns:ReceiveDeclatationsSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DeclarationsSoap" type="tns:DeclarationsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ReceiveDeclatations">
+      <soap:operation soapAction="http://tempuri.org/ReceiveDeclatations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeclarationsSoap12" type="tns:DeclarationsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ReceiveDeclatations">
+      <soap12:operation soapAction="http://tempuri.org/ReceiveDeclatations" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Declarations">
+    <wsdl:port name="DeclarationsSoap" binding="tns:DeclarationsSoap">
+      <soap:address location="https://localhost:44376/Declarations.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DeclarationsSoap12" binding="tns:DeclarationsSoap12">
+      <soap12:address location="https://localhost:44376/Declarations.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint></con:endpoints><con:operation id="b7f602e8-c4e9-4e33-b42d-fa5d762ebdd1" isOneWay="false" action="http://tempuri.org/ReceiveDeclatations" name="ReceiveDeclatarions" bindingOperationName="ReceiveDeclatations" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4c685b92-1454-488b-a746-651efdbaa054" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:44376/Declarations.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ReceiveDeclatations>\r
+         <!--Optional:-->\r
+         <tem:inputDocument>?</tem:inputDocument>\r
+      </tem:ReceiveDeclatations>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ReceiveDeclatations"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

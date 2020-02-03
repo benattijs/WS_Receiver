@@ -49,9 +49,22 @@ The input expected for the Declaration Endpoint will be a string containing a XM
 
 ### Output:
 The output is a string containtin a XML with Response Status accordingly to the valdiations.
+```
+ <Response>
+    <ResponseStatus>-1<ResponseStatus>
+    <ErrorList>
+	<ErrorItem>
+	    <ErrorCode>-1</ErrorCode>
+	</ErrorItem>
+	<ErrorItem>
+	    <ErrorCode>-2</ErrorCode>
+	</ErrorItem>
+    </ErrorList>   
+</Response>
+```
 
 ### SoapUI Project Exported
-Link for the exported SoapUI project XML: [SOAP UI Declarations Project](WS_Receiver/Declarations-soapui-project.xml)
+Link for the exported SoapUI project XML: [SOAP UI Declarations Project](Declarations-soapui-project.xml)
 
 ## Code documentation
 Project is divided and 2 projects:
